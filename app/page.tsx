@@ -93,10 +93,11 @@ export default function WeddingInvitation() {
             variants={fadeInScale}
             className="khmer-text text-4xl md:text-5xl font-bold text-foreground mb-8 leading-relaxed"
           >
-            សិទ្ធិយល់អភិជន៍ប៉ាក់ពិធីមង្គលការអភិជន៍
+            សិរីមង្គលអាពាហ៍ពិពាហ៍
+         
           </motion.h1>
           <motion.p variants={fadeInUp} className="khmer-text text-2xl md:text-3xl text-foreground/90">
-            ស្វាគមន៍មកកាន់ពិធី
+            សូមគោរពអញ្ជើញ
           </motion.p>
         </AnimatedSection>
       </section>
@@ -106,8 +107,28 @@ export default function WeddingInvitation() {
         <AnimatedSection className="text-center max-w-md mx-auto">
           <motion.div variants={fadeInUp} className="space-y-8">
             <div>
-              <p className="khmer-text text-3xl md:text-4xl font-bold text-foreground mb-2">ថ្ងៃ ២៥ ខែ មេសា</p>
-              <p className="khmer-text text-2xl md:text-3xl text-foreground/90">ឆ្នាំ ២០២៥</p>
+              <p className="khmer-text text-3xl md:text-4xl font-bold text-foreground mb-2">ថ្ងៃ ទី ខែ ឆ្នាំ២០២៦</p>
+              <p className="khmer-text text-2xl md:text-3xl text-foreground/90">12th February 2026</p>
+              <p className="khmer-text text-2xl md:text-3xl text-foreground/90">Location</p>
+            </div>
+          </motion.div>
+        </AnimatedSection>
+      </section>
+
+        {/* Section 4: Photo/Image Section */}
+        <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 snap-section">
+        <AnimatedSection className="max-w-md w-full">
+          <motion.div variants={fadeInScale} className="space-y-6">
+          <div className="flex items-center justify-center gap-4">
+                <p className="khmer-text text-lg md:text-xl text-foreground">កូនប្រុស</p>
+                <p className="khmer-text text-2xl md:text-3xl font-bold text-foreground">តែ ច័ន្ទរនតៈ</p>
+              </div>
+              <div className="flex items-center justify-center gap-4">
+                <p className="khmer-text text-lg md:text-xl text-foreground">កូនស្រី</p>
+                <p className="khmer-text text-2xl md:text-3xl font-bold text-foreground">នាត ម៉ីលីម</p>
+              </div>
+            <div className="aspect-[3/4] bg-card rounded-lg shadow-2xl flex items-center justify-center">
+              <p className="text-card-foreground/30 font-sans text-sm">Wedding Photo</p>
             </div>
           </motion.div>
         </AnimatedSection>
@@ -145,26 +166,14 @@ export default function WeddingInvitation() {
             <motion.div variants={fadeInRight} className="space-y-4">
               <div className="flex items-center justify-center gap-4">
                 <p className="khmer-text text-lg md:text-xl text-foreground">កូនប្រុស</p>
-                <p className="khmer-text text-2xl md:text-3xl font-bold text-foreground">ឈី ចិន្តនា:</p>
+                <p className="khmer-text text-2xl md:text-3xl font-bold text-foreground">តែ ច័ន្ទរនតៈ</p>
               </div>
               <div className="flex items-center justify-center gap-4">
                 <p className="khmer-text text-lg md:text-xl text-foreground">កូនស្រី</p>
-                <p className="khmer-text text-2xl md:text-3xl font-bold text-foreground">ឈាន ជីលីង</p>
+                <p className="khmer-text text-2xl md:text-3xl font-bold text-foreground">នាត ម៉ីលីម</p>
               </div>
               <p className="khmer-text text-xl md:text-2xl text-foreground mt-6">ថ្ងៃ ២៥ ខែ មេសា ២០២៥</p>
             </motion.div>
-          </motion.div>
-        </AnimatedSection>
-      </section>
-
-      {/* Section 4: Photo/Image Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 snap-section">
-        <AnimatedSection className="max-w-md w-full">
-          <motion.div variants={fadeInScale} className="space-y-6">
-            <h2 className="khmer-text text-3xl md:text-4xl font-bold text-foreground text-center">រូបភាពរបស់យើង</h2>
-            <div className="aspect-[3/4] bg-card rounded-lg shadow-2xl flex items-center justify-center">
-              <p className="text-card-foreground/30 font-sans text-sm">Wedding Photo</p>
-            </div>
           </motion.div>
         </AnimatedSection>
       </section>
