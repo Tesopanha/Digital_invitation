@@ -21,8 +21,8 @@ const nokora = Nokora({
 })
 
 export const metadata: Metadata = {
-  title: "Wedding Invitation - TE CHANRATANAK & MEILIN",
-  description: "You are cordially invited to celebrate the wedding of TE CHANRATANAK and MEILIN",
+  title: "Wedding Invitation - CHANRATANAK & MEILIN",
+  description: "You are cordially invited to celebrate the wedding of CHANRATANAK and MEILIN",
   generator: "v0.app",
 }
 
@@ -32,8 +32,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} ${nokora.variable}`}>
+    <html lang="en" className="m-0 p-0 w-full max-w-full overflow-x-hidden">
+      <body className={`font-sans m-0 p-0 w-full max-w-full overflow-x-hidden ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} ${nokora.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
