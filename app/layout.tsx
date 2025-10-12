@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
-import { Playfair_Display, Nokora } from "next/font/google"
+import { Playfair_Display, Nokora, Koulen } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
@@ -20,6 +20,13 @@ const nokora = Nokora({
   display: "swap",
 })
 
+const koulen = Koulen({
+  weight: ["400"],
+  subsets: ["khmer"],
+  variable: "--font-koulen",
+  display: "swap",
+})
+
 export const metadata: Metadata = {
   title: "Wedding Invitation - CHANRATANAK & MEILIN",
   description: "You are cordially invited to celebrate the wedding of CHANRATANAK and MEILIN",
@@ -33,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="m-0 p-0 w-full max-w-full overflow-x-hidden">
-      <body className={`font-sans m-0 p-0 w-full max-w-full overflow-x-hidden ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} ${nokora.variable}`}>
+      <body className={`font-sans m-0 p-0 w-full max-w-full overflow-x-hidden ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable} ${nokora.variable} ${koulen.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

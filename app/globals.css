@@ -79,6 +79,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-nokora: "Nokora";
+  --font-koulen: "Koulen";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -141,7 +142,7 @@
 
   /* Added custom styles for Cambodian wedding invitation */
   .khmer-text {
-    font-family: var(--font-nokora), "Khmer OS Content", serif;
+    font-family: var(--font-koulen), "Khmer OS Content", serif;
     line-height: 1.8;
   }
 
